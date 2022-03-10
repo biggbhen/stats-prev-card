@@ -20,22 +20,19 @@ body{
  border-radius: 0.625rem;
  background-color: #1C1938;
 }
-.boxOne, .boxTwo{
- border: 1px solid black;
-}
+
 .boxOne{
  grid-area: a;
- padding: 70px;
-position: relative;
+ padding: 4rem;
+
 }
 
 .boxOne section + section {
 display: flex;
 justify-content: space-between;
 /* border: 1px solid green; */
-width: 70%;
-position: absolute;
-bottom: 70px;
+width: 100%;
+margin-top: 4rem;
 }
 .boxOne section + section > div{
  text-align: center;
@@ -49,6 +46,9 @@ bottom: 70px;
  background-repeat: no-repeat;
 background-size: 100% 100%;
 background-color: rgba(183, 83, 199, 0.5);
+}
+span{
+  color: #995AC5;
 }
 h1{
  font-size:clamp(1.7rem, 3vw, 2.5rem) ;
@@ -65,6 +65,7 @@ h2{
 }
 @media (max-width:770px) {
  .container{
+    margin:2rem auto 2rem auto;
   grid-template-areas: 'b b'
                        'a a';
   grid-auto-rows: 1fr 2fr;
@@ -77,10 +78,10 @@ align-items: center;
 height: 350px;
 }
 h1{
- font-size: clamp(2.5rem, 8vw, 3rem);
+ font-size: clamp(2.3rem, 8vw, 3rem);
 }
 p, h2{
-  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  font-size: clamp(1.1rem, 3.5vw, 1.8rem);
   line-height: 2.2rem;
 }
 }
