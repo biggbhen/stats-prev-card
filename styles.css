@@ -65,7 +65,7 @@ h2{
 }
 @media (max-width:770px) {
  .container{
-    margin:2rem auto 2rem auto;
+    margin:5rem auto 5rem auto;
   grid-template-areas: 'b b'
                        'a a';
   grid-auto-rows: 1fr 2fr;
